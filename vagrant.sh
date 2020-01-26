@@ -3,7 +3,7 @@
 # Vagrant boxes
 vagrant_boxes=(
   laravel/homestead
-  scotch/box
+  scotch/box-pro
 )
 
 # Vagrant plugins
