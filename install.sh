@@ -20,7 +20,6 @@ apps=(
   iterm2
   tableplus
   ngrok
-  sourcetree
   postman
   docker
   transmit
