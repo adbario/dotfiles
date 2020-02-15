@@ -44,6 +44,5 @@
   "gitlens.views.repositories.location": "scm",
   "telemetry.enableTelemetry": false,
   "gitlens.advanced.telemetry.enabled": false,
-  "editor.formatOnSaveTimeout": 5000,
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar"
 }
