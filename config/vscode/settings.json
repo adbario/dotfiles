@@ -24,7 +24,8 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "[php]": {
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "junstyle.php-cs-fixer"
   },
   "php.suggest.basic": false,
   "eslint.alwaysShowStatus": true,
@@ -44,5 +45,6 @@
   "gitlens.views.repositories.location": "scm",
   "telemetry.enableTelemetry": false,
   "gitlens.advanced.telemetry.enabled": false,
-  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar"
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.onsave": true
 }
