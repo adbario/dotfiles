@@ -92,6 +92,7 @@ vscode=(
   ikappas.phpcs
   emallin.phpunit
   junstyle.php-cs-fixer
+  felixfbecker.php-debug
   bmewburn.vscode-intelephense-client
   mehedidracula.php-namespace-resolver
   robinbentley.sass-indented
@@ -175,14 +176,18 @@ composer global require laravel/valet
 brew unlink php@7.4 && brew link --force --overwrite php@7.3
 brew link mysql@5.7 --force
 
-# Install imagick PHP extension
+# Install Imagick and XDebug
 yes '' | pecl install imagick
+yes '' | pecl install xdebug
 
 # Configure PHP
 for i in '7.3' '7.4'; do
   sed -i -e 's/^post_max_size = .*/post_max_size = 32M/' /usr/local/etc/php/$i/php.ini
   sed -i -e 's/^upload_max_filesize = .*/upload_max_filesize = 32M/' /usr/local/etc/php/$i/php.ini
   sed -i -e 's/^memory_limit = .*/memory_limit = 512M/' /usr/local/etc/php/$i/php.ini
+  # XDebug
+  echo 'xdebug.remote_enable = 1' >> /usr/local/etc/php/$i/php.ini
+  echo 'xdebug.remote_autostart = 1' >> /usr/local/etc/php/$i/php.ini
 done
 
 # Start PHP, MySQL and Redis

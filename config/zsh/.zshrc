@@ -28,6 +28,9 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export ANDROID_NDK_HOME=/usr/local/share/android-ndk
 export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
 
+# XDebug
+export XDEBUG_CONFIG="idekey=vscode"
+
 # Aliases
 alias zshconfig="code ~/.zshrc"
 alias art="php artisan"
