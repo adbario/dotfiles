@@ -28,6 +28,7 @@
     "editor.defaultFormatter": "junstyle.php-cs-fixer"
   },
   "php.suggest.basic": false,
+  "namespaceResolver.sortAlphabetically": true,
   "eslint.alwaysShowStatus": true,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
