@@ -29,6 +29,7 @@
     "editor.defaultFormatter": "junstyle.php-cs-fixer"
   },
   "php.suggest.basic": false,
+  "php-docblocker.useShortNames": true,
   "namespaceResolver.sortAlphabetically": true,
   "eslint.alwaysShowStatus": true,
   "prettier.singleQuote": true,
