@@ -29,6 +29,9 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # XDebug
 export XDEBUG_CONFIG="idekey=vscode"
 
+# Composer
+export COMPOSER_MEMORY_LIMIT=-1
+
 # Aliases
 alias zshconfig="code ~/.zshrc"
 alias art="php artisan"
