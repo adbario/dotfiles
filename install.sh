@@ -37,8 +37,8 @@ apps=(
   coconutbattery
   vlc
   carbon-copy-cloner
-  tidal
-  fontbase
+  spotify
+  typeface
 )
 
 # Command line tools
