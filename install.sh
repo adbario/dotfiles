@@ -157,17 +157,17 @@ cp ./config/vscode/settings.json ~/Library/Application\ Support/Code/User/settin
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# Install Powerlevel10k theme
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 # Copy zsh configuration
 cp ./config/zsh/.zshrc ~/.zshrc
+cp ./config/zsh/.p10k.zsh ~/.p10k.zsh
 
 # Hide the last login in command prompt
 touch ~/.hushlogin
 
-# Install Powerline fonts
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts && ./install.sh && cd .. && rm -rf fonts
-
-# Install global Caravel installer and Valet
+# Install global Laravel installer and Valet
 composer global require laravel/installer
 composer global require laravel/valet
 ~/.composer/vendor/bin/valet install

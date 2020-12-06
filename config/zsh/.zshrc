@@ -1,8 +1,13 @@
+# Enable Powerlevel10k instant prompt
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Path to oh-my-zsh installation
 export ZSH="/Users/riku/.oh-my-zsh"
 
-# Theme
-ZSH_THEME="agnoster"
+# Set theme
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Update automatically without prompting
 DISABLE_UPDATE_PROMPT="true"
@@ -15,8 +20,9 @@ DISABLE_MAGIC_FUNCTIONS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Plugins
-plugins=(git brew composer git-flow gulp homestead laravel npm yarn vagrant docker docker-compose docker-machine gatsby zsh_reload)
+plugins=(git)
 
+# Load Oh My Zsh
 source $ZSH/oh-my-zsh.sh
 
 # Android paths
@@ -33,6 +39,7 @@ export XDEBUG_CONFIG="idekey=vscode"
 export COMPOSER_MEMORY_LIMIT=-1
 
 # Aliases
+alias reload="source ~/.zshrc"
 alias zshconfig="code ~/.zshrc"
 alias art="php artisan"
 alias ping="ping -c 5"
@@ -40,29 +47,11 @@ alias ip="curl http://ipecho.net/plain; echo"
 alias rn="npx react-native"
 alias rns="npx react-native start"
 alias rnsr="npx react-native start --reset-cache"
-alias rnios="npx react-native run-ios"
+alias rnios="npx react-native run-ios"``
 alias rnand="npx react-native run-android"
-alias rniosse="npx react-native run-ios --simulator='iPhone SE'"
-alias rnios8="npx react-native run-ios --simulator='iPhone 8'"
-alias rnios11p="npx react-native run-ios --simulator='iPhone 11 Pro'"
-alias rnios11pm="npx react-native run-ios --simulator='iPhone 11 Pro Max'"
-
-# Default user, removes host from propmt
-DEFAULT_USER="riku"
 
 # Syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Move prompt to new line
-prompt_end() {
-  if [[ -n $CURRENT_BG ]]; then
-      print -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
-  else
-      print -n "%{%k%}"
-  fi
-
-  print -n "%{%f%}"
-  CURRENT_BG=''
-
-  printf "\n ➜";
-}
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
