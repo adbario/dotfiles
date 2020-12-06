@@ -6,7 +6,7 @@ This repository is a collection of config files and install scripts I use to set
 
 At least the following changes should be made:
 
-1. Change Oh My Zsh installation path and default user in [config/zsh/.zshrc](config/zsh/.zshrc) to your own values.
+1. Change Oh My Zsh installation path in [config/zsh/.zshrc](config/zsh/.zshrc) to your own value.
 2. Change Git username and email address in [git.sh](git.sh) to your own values.
 
 **NOTE:** Visual Studio Code currently has a bug that requires security permissions before it can be opened. Installer loops opening VS Code as long as the permissions are missing. Security & Privacy settings are opened automatically where permissions can be given. Read more: https://github.com/microsoft/vscode/issues/74782
@@ -64,6 +64,10 @@ Copy iTerm2 preferencies:
 2. Open preferencies: `CMD + ,`
 3. Select `Preferencies` tab and select `Load preferencies from a custom folder or URL`
 4. Select folder `config/iterm2` and restart iTerm2
+
+Make iTerm2 default terminal application:
+- Select `iTerm2` from menu bar
+- Select `Make iTerm2 Default Term`
 
 ### VirtualBox
 
