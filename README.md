@@ -85,7 +85,7 @@ If you wish to install VirtualBox, it needs to be done manually as VirtualBox ke
 Copy existing SSH keys to `~/.ssh/` folder or generate a new one:
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 ### Cloudflare DNS
