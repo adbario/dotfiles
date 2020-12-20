@@ -100,3 +100,13 @@ Use Cloudflare 1.1.1.1 as DNS resolver. Set the following addresses as DNS serve
 ```
 
 Read more: https://1.1.1.1/dns/
+
+### Alfred workflows
+
+Useful workflows for [Alfred](https://www.alfredapp.com/):
+- [Laravel Docs](https://github.com/tillkruss/alfred-laravel-docs)
+- [Tailwind CSS Docs](https://github.com/clnt/alfred-tailwindcss-docs)
+- [Vue.js Docs](https://github.com/vmitchell85/alfred-vuejs-docs)
+- [PHP Docs](https://github.com/billrobclark/alfred-phpdoc-search)
+- [Generate Passwords](https://github.com/otherguy/alfred-passwords-workflow)
+- [Naming Things](https://github.com/sebastiandedeyne/naming-things-alfred-workflow)
